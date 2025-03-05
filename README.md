@@ -9,11 +9,11 @@ NIMBUS Forecast is developed to showcase real-time weather data in an elegant an
 ## Screenshots
 
 ### Light Mode
-![Light Mode](screenshots/light%20mode.png)
+![Light Mode](Screenshot/Lightmode.png)
 *Modern interface with light theme and weather information*
 
 ### Dark Mode
-![Dark Mode](screenshots/dark%20mode.png)
+![Dark Mode](Screenshot/Darkmode.png)
 *Elegant dark theme with neon accents*
 
 ## Core Features
