@@ -4,6 +4,7 @@ import { FiDroplet, FiWind, FiThermometer, FiSun } from 'react-icons/fi'
 
 interface CurrentWeatherProps {
   weather: WeatherData
+  isLoading?: boolean
 }
 
 export const CurrentWeather = ({ weather }: CurrentWeatherProps) => {

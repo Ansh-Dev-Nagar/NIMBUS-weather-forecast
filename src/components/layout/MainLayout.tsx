@@ -1,4 +1,4 @@
-import { Box, Container, Flex, IconButton, useColorMode, useColorModeValue, useToast, HStack } from '@chakra-ui/react'
+import { Box, Container, Flex, IconButton, useColorMode, useColorModeValue, useToast } from '@chakra-ui/react'
 import { FiSun, FiMoon } from 'react-icons/fi'
 import { WeatherSearch } from '../weather/WeatherSearch'
 import { CurrentWeather } from '../weather/CurrentWeather'
@@ -123,18 +123,18 @@ export const MainLayout = () => {
         </Flex>
 
         <Box mb={8}>
-          <WeatherSearch onCitySelect={handleCitySelect} />
+          <WeatherSearch onCitySelect={handleCitySelect} isLoading={isLoading} />
         </Box>
 
         {currentWeather && (
           <Box mb={8}>
-            <CurrentWeather weather={currentWeather} />
+            <CurrentWeather weather={currentWeather} isLoading={isLoading} />
           </Box>
         )}
 
         {forecast.length > 0 && (
           <Box>
-            <WeatherForecast forecast={forecast} />
+            <WeatherForecast forecast={forecast} isLoading={isLoading} />
           </Box>
         )}
       </Container>

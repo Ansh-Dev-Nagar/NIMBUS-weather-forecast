@@ -4,6 +4,7 @@ import { weatherApi } from '../../services/weatherApi'
 
 interface WeatherSearchProps {
   onCitySelect: (lat: number, lon: number, locationName: string) => void
+  isLoading?: boolean
 }
 
 export const WeatherSearch = ({ onCitySelect }: WeatherSearchProps) => {

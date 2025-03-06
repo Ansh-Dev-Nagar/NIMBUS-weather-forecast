@@ -3,6 +3,7 @@ import { ForecastData } from '../../services/weatherApi'
 
 interface WeatherForecastProps {
   forecast: ForecastData[]
+  isLoading?: boolean
 }
 
 export const WeatherForecast = ({ forecast }: WeatherForecastProps) => {
